@@ -1,3 +1,6 @@
+[Uploading watch_stopwatch.srt…]()
+
+
 # StopWatch_Watch_Project
 
 ## 요구사항
@@ -69,8 +72,8 @@
 | SysTick | 1ms | StopWatch 0.1초 측정 (`HAL_GetTick`) |
 
 ### 7. 제출
-
-- 동작 영상 업로드
+- 동작 영상
+https://github.com/user-attachments/assets/be25d4a3-2d6f-4917-8eec-a62850f4b1c3
 - 영상에 보여줄 것: 모드 전환, StopWatch의 run/stop/clear, 시계의 분·초 증가와 점 깜빡임, 각 상태의 LED
 
 ### 추가 기능 (요구사항 외)
