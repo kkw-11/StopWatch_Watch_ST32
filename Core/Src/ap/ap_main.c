@@ -8,6 +8,7 @@
 
 #include "ap_main.h"
 #include "StopWatch/StopWatch.h"
+#include "Watch/Watch.h"
 #include "../driver/fnd/fnd.h"
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
@@ -19,7 +20,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   }
 
   if(htim->Instance == TIM2){
-	  fnd_show_number();
+	  watch_interrupt();
   }
 
   /* NOTE : This function should not be modified, when the callback is needed,
@@ -30,8 +31,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 int ap_main(void)
 {
 
-	StopWatch_init();
-	Fnd_Mode_init();
+	fnd_mode_init();
+	stopWatch_init();
+	watch_init();
 
 	while(1){
 

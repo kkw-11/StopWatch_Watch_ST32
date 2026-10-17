@@ -6,5 +6,5 @@
 ../Core/Src/driver/fnd/fnd.c:70:13:fnd_sel_digit	5
 ../Core/Src/driver/fnd/fnd.c:100:13:fnd_disp_number	2
 ../Core/Src/driver/fnd/fnd.c:130:6:fnd_show_number	5
-../Core/Src/driver/fnd/fnd.c:162:6:Fnd_Mode_init	1
+../Core/Src/driver/fnd/fnd.c:162:6:fnd_mode_init	1
 ../Core/Src/driver/fnd/fnd.c:171:6:fnd_change_mode	5

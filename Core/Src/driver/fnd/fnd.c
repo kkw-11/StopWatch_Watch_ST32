@@ -159,7 +159,7 @@ void fnd_show_number() {
 
 }
 
-void Fnd_Mode_init(void){
+void fnd_mode_init(void){
 
 	led_init(&stopWatch_watch, GPIOB, GPIO_PIN_15);
 
@@ -171,22 +171,20 @@ void Fnd_Mode_init(void){
 void fnd_change_mode(){
 	static int fnd_state = STOPWATCH;
 
-
 	switch(fnd_state){
 		case WATCH:
-
 			if(button_getState(&btn_stopwatch_watch) == ACT_PUSH){
 				fnd_state = STOPWATCH;
 			}
-
-			Watch_Task();
+			watch_Task();
 			break;
 		case STOPWATCH:
+
 			if(button_getState(&btn_stopwatch_watch) == ACT_PUSH){
 				fnd_state = WATCH;
 			}
 			fnd_set_dp(0);
-			StopWatch_task();
+			stopWatch_task();
 			break;
 		default:
 			break;

@@ -13,7 +13,6 @@ typedef enum {
 	STOP, RUN, CLEAR
 } stopWatch_t;
 
-
 static void StopWatch_stop();
 static void StopWatch_run();
 static void StopWatch_clear();
@@ -27,8 +26,8 @@ static uint16_t StopWatch_getCounter(void);
 static stopWatch_t stopWatch_state;
 static uint16_t counter;
 
-static led_t led_run;
-static led_t led_stop;
+
+static led_t led_watch, led_stopWatch, led_stop, led_run;
 
 static button_t btn_run_stop;
 static button_t btn_clear;
@@ -59,12 +58,15 @@ static uint16_t StopWatch_getCounter(void){
 	return counter;
 }
 
-void StopWatch_init(void){
+void stopWatch_init(void){
+
 	stopWatch_state = STOP;
 	counter = 0;
 
-	led_init(&led_stop, GPIOB, GPIO_PIN_13);
-	led_init(&led_run, GPIOC, GPIO_PIN_4);
+	led_init(&led_watch,     GPIOB, GPIO_PIN_15);
+	led_init(&led_stopWatch, GPIOB, GPIO_PIN_14);
+	led_init(&led_stop,      GPIOB, GPIO_PIN_13);
+	led_init(&led_run,       GPIOC, GPIO_PIN_4);
 
 	button_init(&btn_run_stop, GPIOC, GPIO_PIN_1);
 	button_init(&btn_clear, GPIOC, GPIO_PIN_3);
@@ -73,12 +75,7 @@ void StopWatch_init(void){
 
 }
 
-void StopWatch_task(void){
-	led_t led_watch = { GPIOB, GPIO_PIN_15 };
-	led_t led_stopWatch = { GPIOB, GPIO_PIN_14 };
-	led_t led_stop = { GPIOB, GPIO_PIN_13 };
-	led_t led_run = { GPIOC, GPIO_PIN_4 };
-
+void stopWatch_task(void){
 	switch(stopWatch_state){
 		case STOP:
 			StopWatch_stop();

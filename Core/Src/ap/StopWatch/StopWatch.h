@@ -8,8 +8,8 @@
 #ifndef SRC_AP_STOPWATCH_STOPWATCH_H_
 #define SRC_AP_STOPWATCH_STOPWATCH_H_
 
-void StopWatch_init(void);
-void StopWatch_task(void);
+void stopWatch_init(void);
+void stopWatch_task(void);
 
 
 #endif /* SRC_AP_STOPWATCH_STOPWATCH_H_ */

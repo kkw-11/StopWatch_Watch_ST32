@@ -1,5 +1,6 @@
 Core/Src/ap/ap_main.o: ../Core/Src/ap/ap_main.c ../Core/Src/ap/ap_main.h \
- ../Core/Src/ap/StopWatch/StopWatch.h ../Core/Src/ap/../driver/fnd/fnd.h \
+ ../Core/Src/ap/StopWatch/StopWatch.h ../Core/Src/ap/Watch/Watch.h \
+ ../Core/Src/ap/../driver/fnd/fnd.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -29,6 +30,7 @@ Core/Src/ap/ap_main.o: ../Core/Src/ap/ap_main.c ../Core/Src/ap/ap_main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 ../Core/Src/ap/ap_main.h:
 ../Core/Src/ap/StopWatch/StopWatch.h:
+../Core/Src/ap/Watch/Watch.h:
 ../Core/Src/ap/../driver/fnd/fnd.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
