@@ -1,0 +1,11 @@
+../Core/Src/ap/StopWatch/StopWatch.c:38:13:StopWatch_setState	16	static
+../Core/Src/ap/StopWatch/StopWatch.c:42:20:StopWatch_getState	4	static
+../Core/Src/ap/StopWatch/StopWatch.c:46:13:StopWatch_incCounter	4	static
+../Core/Src/ap/StopWatch/StopWatch.c:50:13:StopWatch_clearCounter	4	static
+../Core/Src/ap/StopWatch/StopWatch.c:54:13:StopWatch_setCounter	16	static
+../Core/Src/ap/StopWatch/StopWatch.c:58:17:StopWatch_getCounter	4	static
+../Core/Src/ap/StopWatch/StopWatch.c:62:6:StopWatch_init	8	static
+../Core/Src/ap/StopWatch/StopWatch.c:76:6:StopWatch_task	40	static
+../Core/Src/ap/StopWatch/StopWatch.c:107:13:StopWatch_stop	16	static
+../Core/Src/ap/StopWatch/StopWatch.c:118:13:StopWatch_run	16	static
+../Core/Src/ap/StopWatch/StopWatch.c:142:13:StopWatch_clear	16	static
