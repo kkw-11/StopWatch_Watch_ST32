@@ -83,6 +83,8 @@ https://github.com/user-attachments/assets/be25d4a3-2d6f-4917-8eec-a62850f4b1c3
 ## System Architecture
 <img width="827" height="767" alt="image" src="https://github.com/user-attachments/assets/6cd5713a-25d7-403e-982e-fb29d94c5604" />
 
+## Interrupt Timing Architecture
+<img width="1530" height="900" alt="interrupt_timing_architecture" src="https://github.com/user-attachments/assets/bfe4ac27-cefb-4e86-886e-815f1c3e53f5" />
 
 ### Interrupt Signal Path (TIM2)
 <img width="200" height="800" alt="1_interrupt_signal_path" src="https://github.com/user-attachments/assets/a41facd8-0c09-4d7a-89c9-f0710b0e405c" />
